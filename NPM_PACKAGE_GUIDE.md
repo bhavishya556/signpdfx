@@ -6,7 +6,7 @@ Your TypeScript codebase has been successfully converted into a clean, publishab
 
 ## Package Details
 
-- **Name**: `pdx`
+- **Name**: `signpdfx`
 - **Version**: `1.0.0`
 - **Main Export**: `getCertificateFromSignature(pdf)`
 - **TypeScript Support**: ✅ Full type definitions included
@@ -16,12 +16,12 @@ Your TypeScript codebase has been successfully converted into a clean, publishab
 
 ### Installation
 ```bash
-npm install pdx
+npm install signpdfx
 ```
 
 ### Usage
 ```javascript
-import { getCertificateFromSignature } from 'pdx';
+import { getCertificateFromSignature } from 'signpdfx';
 import { readFileSync } from 'fs';
 
 // Load a PDF file

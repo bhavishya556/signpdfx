@@ -2,7 +2,7 @@
 
 ## ✅ Package Testing Complete!
 
-Your `pdx` package has been thoroughly tested and is **ready for deployment**.
+Your `signpdfx` package has been thoroughly tested and is **ready for deployment**.
 
 ## Test Results
 
@@ -79,7 +79,7 @@ dist/lib/
 
 ### 🎯 **Recommended Usage**
 ```javascript
-import { getCertificateFromSignature } from 'pdx';
+import { getCertificateFromSignature } from 'signpdfx';
 import { readFileSync } from 'fs';
 
 // Load PDF as Buffer (recommended)

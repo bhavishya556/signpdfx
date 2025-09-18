@@ -13,13 +13,13 @@ A TypeScript npm package for extracting X.509 certificates from PDF signatures.
 ## Installation
 
 ```bash
-npm install pdx
+npm install signpdfx
 ```
 
 ## Usage
 
 ```javascript
-import { getCertificateFromSignature } from 'pdx';
+import { getCertificateFromSignature } from 'signpdfx';
 import { readFileSync } from 'fs';
 
 // Load a PDF file
@@ -56,7 +56,7 @@ Extracts X.509 certificates from a PDF signature.
 
 **Example:**
 ```typescript
-import { getCertificateFromSignature } from 'pdx';
+import { getCertificateFromSignature } from 'signpdfx';
 
 const pdfBuffer = Buffer.from(pdfData);
 const certificates = getCertificateFromSignature(pdfBuffer);
