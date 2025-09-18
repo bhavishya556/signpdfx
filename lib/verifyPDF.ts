@@ -20,7 +20,7 @@ const verify = (signature: string, signedData: Buffer, signatureMeta: any): {
     expired: boolean;
     meta: {
         certs: any[];
-        signatureMeta: any;
+        signatureMeta: any
     };
 } => {
     const message = getMessageFromSignature(signature);
