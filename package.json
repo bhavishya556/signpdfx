@@ -1,6 +1,6 @@
 {
   "name": "signpdfx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extract X.509 certificates from PDF signatures",
   "main": "dist/lib/index.js",
   "types": "dist/lib/index.d.ts",
@@ -29,7 +29,7 @@
     "clean": "rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Bhavishya Ver",
+  "author": "Bhavishya Verma",
   "license": "MIT",
   "repository": {
     "type": "git",
