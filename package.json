@@ -1,10 +1,9 @@
 {
   "name": "signpdfx",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Extract X.509 certificates from PDF signatures",
   "main": "dist/lib/index.js",
   "types": "dist/lib/index.d.ts",
-  "type": "module",
   "files": [
     "dist/**/*",
     "README.md",
@@ -25,6 +24,7 @@
     "start": "node dist/lib/index.js",
     "jadu": "npm run build && npm run start",
     "example": "tsc && cp lib/helpers/rootCAs.json dist/lib/helpers/ && node dist/example.js",
+    "example-json": "tsc && cp lib/helpers/rootCAs.json dist/lib/helpers/ && node example-json-usage.js",
     "dev": "tsc && cp lib/helpers/rootCAs.json dist/lib/helpers/ && node dist/lib/index.js",
     "clean": "rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -33,12 +33,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/signpdfx.git"
+    "url": "https://github.com/bhavishya556/signpdfxsignpdfx.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/signpdfx/issues"
+    "url": "https://github.com/bhavishya556/signpdfx/issues"
   },
-  "homepage": "https://github.com/yourusername/signpdfx#readme",
+  "homepage": "https://github.com/bhavishya556/signpdfx#readme",
   "dependencies": {
     "node-forge": "^1.3.1",
     "base64-js": "^1.5.1",

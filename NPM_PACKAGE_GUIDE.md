@@ -32,14 +32,14 @@ const certificates = getCertificateFromSignature(pdfBuffer);
 
 // Display results
 certificates.forEach((certGroup, groupIndex) => {
-  console.log(`Certificate Group ${groupIndex + 1}:`);
+  //console.log(`Certificate Group ${groupIndex + 1}:`);
   certGroup.forEach((cert, index) => {
-    console.log(`Certificate ${index + 1}:`);
-    console.log('Subject:', cert.issuedTo.CN);
-    console.log('Issuer:', cert.issuedBy.CN);
-    console.log('Valid From:', cert.validityPeriod.notBefore);
-    console.log('Valid To:', cert.validityPeriod.notAfter);
-    console.log('PEM:', cert.pemCertificate);
+    //console.log(`Certificate ${index + 1}:`);
+    //console.log('Subject:', cert.issuedTo.CN);
+    //console.log('Issuer:', cert.issuedBy.CN);
+    //console.log('Valid From:', cert.validityPeriod.notBefore);
+    //console.log('Valid To:', cert.validityPeriod.notAfter);
+    //console.log('PEM:', cert.pemCertificate);
   });
 });
 ```

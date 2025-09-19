@@ -1,16 +1,19 @@
+
 import { getCertificatesInfoFromPDF } from './certificateDetails.js';
+import { CertificateDetails } from './types.js';
+
 
 /**
- * Extract certificate information from a PDF signature
- * @param pdf - PDF buffer, string, or Uint8Array
- * @returns Array of certificate groups, each containing certificate details
+ * Extract certificates from PDF buffer
+ * @param pdf - PDF buffer
+ * @returns Array of certificate details
  */
-export const getCertificateFromPdf = (pdf: Buffer) => {
-    if (!pdf && !Buffer.isBuffer(pdf)) {
-        throw new Error('PDF ka buffer bhej bhai');
+export const getCertificates = (pdf: Buffer): CertificateDetails[] => {
+    if (!pdf || !Buffer.isBuffer(pdf)) {
+        throw new Error('PDF buffer is required');
     }
     return getCertificatesInfoFromPDF(pdf);
 };
 
-// Re-export the main function as default
-export default getCertificateFromPdf;
+// Export as default
+export default getCertificates;

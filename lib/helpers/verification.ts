@@ -1,11 +1,9 @@
 import tls from 'tls';
 import forge from 'node-forge';
 import { readFileSync } from 'fs';
-import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+import { join } from 'path';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+// Use __dirname for CommonJS
 const rootCAs = JSON.parse(readFileSync(join(__dirname, 'rootCAs.json'), 'utf8'));
 
 const getRootCAs = (): string[] => (tls.rootCertificates as string[]) || (rootCAs as string[]);

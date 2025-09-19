@@ -81,7 +81,7 @@ export const getMessageFromSignature = (signature: Buffer | Uint8Array | string)
     }
 
     if (certificates.length > 0) {
-        console.log(`Successfully extracted ${certificates.length} certificate(s) from PDF signature`);
+        //console.log(`Successfully extracted ${certificates.length} certificate(s) from PDF signature`);
         // Return a mock message object with the certificates
         return {
             certificates: certificates

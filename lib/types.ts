@@ -26,7 +26,7 @@ export interface CertificateDetails {
         notBefore: Date;
         notAfter: Date;
     };
-    pemCertificate: string;
+    certificateData: string; // Clean base64 certificate data without headers
     clientCertificate?: boolean;
 }
 
